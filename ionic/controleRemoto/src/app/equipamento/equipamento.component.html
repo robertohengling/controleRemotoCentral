@@ -1,0 +1,9 @@
+<ion-list>
+	<ion-list-header>
+		<ion-label>{{equipamento.nome}}</ion-label>
+	</ion-list-header>
+	<ion-item *ngFor="let comando of equipamento.comandos">
+		<app-comando [comando]="comando"></app-comando>
+	</ion-item>
+</ion-list>
+

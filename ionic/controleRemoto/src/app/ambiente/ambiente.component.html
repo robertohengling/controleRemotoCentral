@@ -1,0 +1,8 @@
+<ion-list>
+	<ion-list-header>
+		<ion-label>{{ambiente.nome}}</ion-label>
+	</ion-list-header>
+	<ion-item *ngFor="let equipamento of ambiente.equipamentos">
+		<app-equipamento [equipamento]="equipamento"></app-equipamento>
+	</ion-item>
+</ion-list>
